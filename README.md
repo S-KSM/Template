@@ -1,6 +1,6 @@
 # Template
- This is a dev template! 
- 
+ This is strictly following [this awesome guide](https://maeda.pm/2024/03/03/python-poetry-and-vs-code-2024/). I just added a couple of preliminary steps and some windows/powershell versions of the commands.
+
  Step 1. Install Python, make sure to add it to the path
  Step 2. Install PipX:
  ```sh
@@ -23,7 +23,6 @@ E. follow the wizard and create the project.
 F. Make a new project subdirectory and call it myapp.
 G. Make sure the pyproject.toml reads:
 ```YAML
-
 [tool.poetry]
 name="myapp"
 ```
@@ -36,10 +35,9 @@ New-Item -ItemType File -Path .\myapp\main.py
 ```
 I. Create a simple program like:
 ```python
-
 if __name__=="__main__":
     print("Happy Birthday")
-
+```
 J. Type Poetry Install (fingers crossed, no errors).
 I had to change my python interpretor version in `VScode` to reflect the latest version that I had installed.
 To ensure that Visual Studio Code uses the same Python version as your latest version in PowerShell, follow these steps:
